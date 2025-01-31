@@ -1,50 +1,17 @@
-# React + TypeScript + Vite
+# Ignite-Timer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O **Ignite-Timer** é um projeto desenvolvido para ajudar você a organizar suas tarefas no formato **Pomodoro**. Ele permite que você defina o nome de uma tarefa e o tempo de contagem regressiva para completar a tarefa. Além disso, o aplicativo mantém um histórico das tarefas anteriores, mostrando a duração, quando começou e o status (se foi **cumprido** ou **interrompido**).
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Timer Pomodoro**: Configure o tempo de foco para cada tarefa e inicie a contagem regressiva.
+- **Definir Nome da Tarefa**: Atribua um nome para cada tarefa, ajudando a organizar suas atividades.
+- **Histórico de Tarefas**: Visualize os timers anteriores, com informações sobre a duração, início e status da tarefa (cumprida ou interrompida).
+- **Contagem Regressiva**: Acompanhe em tempo real o progresso da sua tarefa com uma contagem regressiva intuitiva.
 
-## Expanding the ESLint configuration
+## Tecnologias Usadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- **React**: Biblioteca JavaScript para construção da interface de usuário.
+- **TypeScript**: Superset do JavaScript para tipagem estática e maior segurança no código.
+- **Styled-Components**: Para estilização dos componentes de forma modular.
+- **LocalStorage**: Para armazenar os timers anteriores e exibi-los no histórico.
