@@ -67,6 +67,8 @@ export function CyclesContextProvider({
     )
 
     setActiveCycleId(null)
+
+    document.title = `Ignite Timer`
   }
 
   function markCurrentCycleAsFinished() {
